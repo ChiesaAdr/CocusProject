@@ -26,3 +26,8 @@ func (c *Cache) IncrOrder() uint64 {
 	c.order++
 	return c.order
 }
+
+//Using to unit test
+func (c *Cache) GetRedis() *redis.Client {
+	return c.redis
+}
